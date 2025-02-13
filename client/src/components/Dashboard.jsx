@@ -29,7 +29,7 @@ const Dashboard = ({ setDarkMode }) => {
     <Container style={{width:"100vw"}}>
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", my: 4 }}>
         <Typography variant="h4" component="h1">
-          Workly
+          <i>Workly</i>
         </Typography>
         <Box>
           <Switch checked={darkMode} onChange={handleDarkModeToggle} />
