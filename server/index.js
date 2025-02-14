@@ -12,7 +12,7 @@ const app = express()
 
 app.use(
     cors({
-      origin: "http://localhost:5173", // Include the protocol
+      origin: "https://workly-client.onrender.com", // Include the protocol
       credentials: true, // If using cookies or authentication headers
     })
   );
