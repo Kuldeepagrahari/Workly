@@ -100,7 +100,7 @@ const Dashboard = () => {
     <div className={styles.dashboard}>
       <header className={styles.header}>
         
-        <h1><span style={{color:"black", fontWeight:"bold"}}>Workly</span><br />Hello {username}!</h1>
+        <h1 style={{color:"white"}}><span style={{color:"gray", fontWeight:"bold"}}>Workly</span><br />Hello {username}!</h1>
         <div className={styles.headerActions}>
           <button onClick={handleDarkModeToggle} className={styles.modeToggle}>
             {darkMode ? <FiSun /> : <FiMoon />}
