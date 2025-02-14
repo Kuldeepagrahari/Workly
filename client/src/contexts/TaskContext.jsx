@@ -85,7 +85,7 @@ export const TaskProvider = ({ children }) => {
   const fetchTasks = async () => {
     if (isAuthenticated && userId) {
       try {
-        const response = await axios.get(`http://localhost:5000/api/tasks/${userId}`);
+        const response = await axios.get(`https://workly-qkos.onrender.com/api/tasks/${userId}`);
         setTasks(response.data);
       } catch (error) {
         console.error("Error fetching tasks:", error);
@@ -95,7 +95,7 @@ export const TaskProvider = ({ children }) => {
 
   const addTask = async (task) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/tasks", task);
+      const response = await axios.post("https://workly-qkos.onrender.com/api/tasks", task);
       setTasks([...tasks, response.data]);
     } catch (error) {
       console.error("Error adding task:", error);
@@ -104,7 +104,7 @@ export const TaskProvider = ({ children }) => {
 
   const updateTask = async (taskId, updates) => {
     try {
-      const response = await axios.put(`http://localhost:5000/api/tasks/${taskId}`, updates);
+      const response = await axios.put(`https://workly-qkos.onrender.com/api/tasks/${taskId}`, updates);
       setTasks(tasks.map((task) => (task._id === taskId ? response.data : task)));
     } catch (error) {
       console.error("Error updating task:", error);
@@ -113,7 +113,7 @@ export const TaskProvider = ({ children }) => {
 
   const deleteTask = async (taskId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${taskId}`);
+      await axios.delete(`https://workly-qkos.onrender.com/api/tasks/${taskId}`);
       setTasks(tasks.filter((task) => task._id !== taskId));
     } catch (error) {
       console.error("Error deleting task:", error);

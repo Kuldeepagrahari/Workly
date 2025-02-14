@@ -15,7 +15,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/register", { name, email, password });
+      const response = await axios.post("https://workly-qkos.onrender.com/api/auth/register", { name, email, password });
       login(response.data.token, response.data.userId, response.data.username);
       navigate("/");
     } catch (error) {

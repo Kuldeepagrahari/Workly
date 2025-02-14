@@ -17,7 +17,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/login", { email, password })
+            const response = await axios.post("https://workly-qkos.onrender.com/api/auth/login", { email, password })
             login(response.data.token, response.data.userId, response.data.username)
             navigate("/")
         } catch (error) {
