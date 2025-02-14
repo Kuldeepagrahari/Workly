@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #007bff;
+    --primary-color-dark: #0056b3;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-task: #ffffff;
+    --bg-task-hover: #f0f0f0;
+    --bg-button: #e9ecef;
+    --bg-button-hover: #ced4da;
+    --bg-input: #ffffff;
+    --bg-category: #e9ecef;
+    --bg-progress: #e9ecef;
+    --text-primary: #333333;
+    --text-secondary: #6c757d;
+    --border-color: #ced4da;
+    --chart-completed: #28a745;
+    --chart-pending: #ffc107;
+  }
+  
+  .dark-mode {
+    --primary-color: #4dabf7;
+    --primary-color-dark: #339af0;
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-task: #2c2c2c;
+    --bg-task-hover: #383838;
+    --bg-button: #333333;
+    --bg-button-hover: #4d4d4d;
+    --bg-input: #2c2c2c;
+    --bg-category: #333333;
+    --bg-progress: #333333;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --border-color: #4d4d4d;
+    --chart-completed: #2ecc71;
+    --chart-pending: #f39c12;
+  }
+  
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  

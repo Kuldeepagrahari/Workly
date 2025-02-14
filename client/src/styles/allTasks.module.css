@@ -1,0 +1,136 @@
+.allTasks {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .allTasks h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filters button {
+    padding: 5px 10px;
+    background-color: var(--bg-button);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: var(--text-primary);
+  }
+  
+  .filters button:hover {
+    background-color: var(--bg-button-hover);
+  }
+  
+  .taskItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--bg-task);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .taskItem:hover {
+    background-color: var(--bg-task-hover);
+  }
+  
+  .checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .checkbox.completed {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+  }
+  
+  .completedText {
+    text-decoration: line-through;
+    color: var(--text-secondary);
+  }
+  
+  .category {
+    margin-left: auto;
+    font-size: 0.8em;
+    color: var(--text-secondary);
+    background-color: var(--bg-category);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  .dueDate,
+  .dueTime {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: var(--text-secondary);
+  }
+  
+  .editButton,
+  .deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    color: var(--text-secondary);
+    transition: color 0.3s;
+  }
+  
+  .editButton:hover,
+  .deleteButton:hover {
+    color: var(--primary-color);
+  }
+  
+  .editForm {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .editForm input {
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--bg-input);
+    color: var(--text-primary);
+  }
+  
+  .editForm button {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .editForm button[type="button"] {
+    background-color: var(--bg-button);
+    color: var(--text-primary);
+  }
+  
+  
